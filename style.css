@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover{
-    color:#fff;
+    color:#fdc0ff;
 }
 
 .main {
@@ -109,7 +109,7 @@ button:hover{
 	width: 100%;
 	height: 50px;
 	background: rgba(255, 217, 0, 0.836);
-	color: #fff;
+	color: #540075;
 	text-align: center;
 	display: flex;
 	justify-content: center;

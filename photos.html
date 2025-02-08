@@ -12,58 +12,76 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css">
-    <title>Gallery</title>
+    <title>Feedback</title>
+    <style>
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .feedback-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .feedback-form label {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .feedback-form input,
+      .feedback-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .feedback-form button {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .feedback-form button:hover {
+        background-color: #218838;
+      }
+    </style>
   </head>
   <body>
     <nav>
         <img src="logow1.png" class="logo" style="block-size: 300px;">
         <div class="nav-items">
-    
             <a href="index.html" style="font-size: x-large;">Home</a>
             <a href="act.html" style="font-size: x-large;">Subjects</a>
-            <a href="about.html" style="font-size: x-large;">3D Visualizing</a>
-            <a href="photos.html" style="font-size: x-large;">Gallery</a>
-            <a href="Contact.html" style="font-size: x-large;">Need Help</a>
+            <a href="about.html" style="font-size: large;">Features to be added</a>
+            <a href="photos.html" style="font-size: large;">Feedback</a>
+            <a href="Contact.html" style="font-size: large;">Need Help</a>
             <a href="https://twitter.com" style="color: white;"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com"><i class="fab fa-instagram-square" style="color: white;" ></i></a>
-            
-      
-
-      </div>
-  </nav>
+        </div>
+    </nav>
+    
     <div class="container">
-      <div class="description">
-        <h2 class="heading-secondary">
-        </h2>
-        </div>
-      <div class="work mb">
-        <img src="g1.jpg" alt=" Image 1">
-        <img src="g2.jpg" alt=" Image 2">
-        <img src="g3.jpg" alt=" Image 3">
-        <img src="g4.jpg" alt=" Image 4">
-        <img src="g5.jpeg" alt=" Image 5">
-        <img src="g6.jpg" alt=" Image 6">
-        <img src="g7.jpg" alt=" Image 7">
-        <img src="g8.jpg" alt=" Image 8">
-      
-      </div>
-    </div>
-  </body>
-</html>
-        <h2 class="heading-secondary">
-        </h2>
-        </div>
-      <div class="work mb">
-        <img src="g1.jpg" alt=" Image 1">
-        <img src="g2.jpg" alt=" Image 2">
-        <img src="g3.jpg" alt=" Image 3">
-        <img src="g4.jpg" alt=" Image 4">
-        <img src="g5.jpeg" alt=" Image 5">
-        <img src="g6.jpg" alt=" Image 6">
-        <img src="g7.jpg" alt=" Image 7">
-        <img src="g8.jpg" alt=" Image 8">
-      
-      </div>
+      <h2 class="heading-secondary">We Value Your Feedback</h2>
+      <form action="submit_feedback.php" method="POST" class="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>
